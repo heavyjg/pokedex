@@ -1,19 +1,21 @@
 import React from "react";
 import styles from "./Pokemon.module.css";
 
-export default function (props) {
+const Pokemon = (props) => {
   return (
     <div className={styles.pokemon}>
       <div className={styles.pokemonBackground}>
-        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" />
+        <img alt="Pokemon" src={props.image} />
       </div>
 
-      <h5 className={styles.pokemonNumber}>Nº 001</h5>
-      <h4 className={styles.pokemonName}>Bulbasaur</h4>
+      <h5 className={styles.pokemonNumber}>Nº {props.id}</h5>
+      <h4 className={styles.pokemonName}>{props.name.charAt(0).toUpperCase() + props.name.slice(1)}</h4>
       <div className={styles.pokemonTypes}>
-        <div className={`${styles.pokemonType} ${styles.grass}`}>Grass</div>
-        <div className={`${styles.pokemonType} ${styles.poison}`}>Poison</div>
+        <div className={`${styles.pokemonType} ${styles.grass}`}>{props.types[0]}</div>
+        <div className={`${styles.pokemonType} ${styles.poison}`}>{props.types[1]}</div>
       </div>
     </div>
   );
 }
+
+export default Pokemon;

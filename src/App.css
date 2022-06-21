@@ -1,5 +1,30 @@
+body {
+  background-color: plum;
+  padding: 5em;
+}
+
 .App {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+}
+
+.App > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.pokeball{
+  background-color: whitesmoke;
+  border-radius: 10px;
   text-align: center;
+  display: flex;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .App-logo {
