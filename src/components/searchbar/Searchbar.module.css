@@ -1,11 +1,18 @@
-.searchbox{
-    padding: 7rem
+.searchbox {
+  padding: 7rem;
+  max-width: 200px;
+  display: flex;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .searchbar {
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-    box-shadow: -3px 3px;
-    text-align: center;
+  width: 100%;
+  height: 35px;
+  border-radius: 20px;
+  box-shadow: -3px 3px;
+  text-align: center;
 }
