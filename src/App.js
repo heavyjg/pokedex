@@ -1,5 +1,5 @@
 import "./App.css";
-import Pokemon from "./components/pokemon/Pokemon";
+import Pokemon from "./components/pokemon/v2/Pokemon";
 import { useState, React } from "react";
 import Searchbar from "./components/searchbar/Searchbar";
 import { getPokemon } from "./services/PokeService";
@@ -30,10 +30,10 @@ function App() {
             fetchPokemon(pokemon);
           }}
         />
-
-        <div className="pokeball">
+        <Pokemon />
+        {/*<div className="pokeball">
           {pokemon !== "" && <Pokemon {...pokemon} />}
-        </div>
+        </div>*/}
       </div>
     </div>
   );
