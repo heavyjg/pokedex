@@ -1,0 +1,33 @@
+.pokebuton {
+    display: grid;    
+        grid-template-columns: 2.5rem;
+        grid-template-rows: 1rem .5rem 1rem;
+        grid-template-areas:
+            "s1"
+            "s2"
+            "s3"
+}
+
+.upper {
+    grid-area: s1;
+    background: #EC0C0C;
+}
+
+.middle {
+    grid-area: s2;
+    background: #000000;
+}
+
+.bottom {
+    grid-area: s3;
+    background: #FFFFFF;
+}
+
+.little_button {
+    justify-self: end;
+    position: relative;
+    height: 15px;
+    width: 15px;
+    background-color:black;    
+    margin: -1.7em .75em;
+}
